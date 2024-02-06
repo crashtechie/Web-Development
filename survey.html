@@ -11,7 +11,7 @@
 <form id="survey-form" target="_blank">
     <fieldset id="user-info">
         <label id="name-label" for="name">Name</label>
-        <input type="text" id="name" placeholder="your name">
+        <input type="text" id="name" placeholder="your name" required>
         <br>
         <label id="email-label" for="email">Email Address</label>
         <input type="email" id="email" placeholder="email@example.com" required>
@@ -30,9 +30,9 @@
         <br>
         <label id="car-type-label" for="car-type">Select a car type: </label>
         <br>
-        <input type="radio" id="sedan" name="car-type"><label id="sedan-label" for="sedan">Sedan</label>
+        <input type="radio" id="sedan" name="car-type" value="sedan"><label id="sedan-label" for="sedan">Sedan</label>
         <br>
-        <input type="radio" id="suv" name="car-type"><label id="suv-label" for="suv">Sports Utility Vehicle</label>
+        <input type="radio" id="suv" name="car-type" value="suv"><label id="suv-label" for="suv">Sports Utility Vehicle</label>
         <br>
         <label id="food-type-label">Select a food type: </label>
         <br>
