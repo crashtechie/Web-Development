@@ -1,0 +1,14 @@
+body{
+    background-color: midnightblue;
+    color: white;
+}
+#title{
+    text-align: center;
+    font-style: bolder;
+}
+#description{
+    text-indent: 5%;
+}
+label{
+    font: bold;
+}
