@@ -1,53 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./technical.css">
-    <title>Discrete Mathematics</title>
+    <title>Technincal Documentation Page</title>
+    <style>
+        @media screen and (max-width:600px) {
+            
+        }
+    </style>
 </head>
 <body>
-<main id="main-doc">
-    <!--Multiple sections required with a class of "main-section" and a header for each setion-->
     <nav id="navbar">
-        <a href="#logicandproofs">Logic and Proofs</a>
-        <a href="#section2">section2</a>
-        <a href="#section3">section3</a>
+        <header>Navigation</header>
+
+        <ul>
+            <li><a class="nav-link" href="#Section_1">Section 1</a></li>
+            <li><a class="nav-link" href="#Section_2">Section 2</a></li>
+            <li><a class="nav-link" href="#Section_3">Section 3</a></li>
+            <li><a class="nav-link" href="#Section_4">Section 4</a></li>
+            <li><a class="nav-link" href="#Section_5">Section 5</a></li>
+        </ul>
     </nav>
-    <h1>Discrete Mathematics</h1>
-    <section class="main-section" id="logicandproofs">
-        <h2>Logic and Proofs</h2>
+<main id="main-doc">   
+    <section class="main-section" id="Section_1">
+        <header>Section 1</header>
+
         <p>Logic is key to a computer scientists work.  It guides the language and instruction as the scientist interfaces with the computer. It is important to build a stron foundation in logic and proofing as these principles will be used constantly.</p>
         <p>Concepts introduced in this section are propositions, truth values, truth tables, logical operations, and compound statements</p>
         <p>Logic is a study of reasoning, of course logic has to start with something.  The most basic type of logic is a proposition a statement that is true or false. An example of this is "The cat has four legs." this simple statement can be either true or false, yes or no, on or off, or in computer terms 0 or 1.</p>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+        </ol>
     </section>
-    <section class="main-section" id="section2">
-        <h2>section2</h2>
+
+    <section class="main-section" id="Section_2">
+        <header>Section 2</header>
+
+        <p>Python Code below creates a while loop in python as long as X is true
+            <br><code>x = True </code>
+            <br><code>while x == True:</code>
+            <br><code>--print(f'this is a {x} statemet")</code>
+            <br><code>--x = False</code></p>
+        
+        <p>The Python code below sets an intiger y to a set of 5 then itterates thorugh it printing each value
+            <br><code>y = {1,2,3,4,5}
+                <br>for items in y:
+                <br>--print(items)
+            </code>
+        </p>
+    </section>
+
+    <section class="main-section" id="Section_3">
+        <header>Section 3</header>
+
         <p>stuff here.</p>
-        <code>
-            "let x=true"
-            <h1></h1>
-            sudocode line 2
-        </code>
+        <p>This is a paragraph</p>
     </section>
-    <section class="main-section" id="section3">
-        <h2>section3</h2>
-        <p>stuff here.</p>
-        <ul>
-            <li>stuff 1
-                <ol>
-                    <li>stuff 2</li>
-                    <li>stuff 3</li>
-                </ol>
-            </li>
-            <li>stuff 4</li>
-            <li>stuff 5</li>
-        </ul>
+
+    <section class="main-section" id="Section_4">
+        <header>Section 4</header>
+
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
     </section>
-    <!--10 paragraph, 5 code, 5 list items-->
-    <!--Need a nav element with id="navbar" and a header and have links to eachS sections-->
-    <!--Nav Bar needs to be on the left of the screen and always visible to the user on regular sized devices-->
-    <!--Nav link should corrispond to the section header-->
-    <!--Need atleast one media query-->
+
+    <section class="main-section" id="Section_5">
+        <header>Section 5</header>
+
+        <p>This is a paragraph</p>
+        <p>This is a paragraph</p>
+    </section>
 </main>
 </body>
 </html>
