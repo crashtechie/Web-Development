@@ -2,22 +2,23 @@
 <meta charset="utf-8">
 <html lang="en">
 <head>
-    <title>Web Survey</title>
+    <title>Preferred Pet</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<h1 id="title">Would You Rather? Survey.</h1>
+<h1 id="title">What Kind of Pet do you want?</h1>
 <p id="description">This is a survey of would you rather.</p>
 <form id="survey-form" target="_blank">
-    <fieldset id="user-info">
-        <label id="name-label" for="name">Name</label>
+    <div id="user-info">
+        <label id="name-label" for="name">Name: </label>
         <input type="text" id="name" placeholder="your name" required>
         <br>
-        <label id="email-label" for="email">Email Address</label>
+        <label id="email-label" for="email">Email Address: </label>
         <input type="email" id="email" placeholder="email@example.com" required>
-    </fieldset>
+    </div>
     <br>
-    <fieldset id="answers">
+    <fieldset id="Survey">
+        <legend>Survey</legend><br>
         <label id="number-label" for="number">Pick a Number between 18-100:</label>
         <input type="number" id="number" min="18" max="100" placeholder="18-100">
         <br>
@@ -25,24 +26,25 @@
         <select id="dropdown">
             <option value="cat">Cat</option>
             <option value="dog">Dog</option>
-            <option value="snake">Snake</option>
+            <option value="snake">Gerbal</option>
         </select>
         <br>
-        <label id="car-type-label" for="car-type">Select a car type: </label>
+        <label id="car-type-label" for="hair-length">Select hair length: </label>
         <br>
-        <input type="radio" id="sedan" name="car-type" value="sedan"><label id="sedan-label" for="sedan">Sedan</label>
+        <label id="short-label" for="short"><input type="radio" id="short" name="hair-length" value="short">Short Hair</label>
         <br>
-        <input type="radio" id="suv" name="car-type" value="suv"><label id="suv-label" for="suv">Sports Utility Vehicle</label>
+        <label id="long-label" for="long"><input type="radio" id="long" name="hair-length" value="long">Long Hair</label>
         <br>
         <label id="food-type-label">Select a food type: </label>
         <br>
-        <input type="checkbox" id="mexican" value="mexican"><label id="mexican-label" for="mexican">Mexican</label>
+        <label id="wet-food-label" for="wet-food"><input type="checkbox" id="wet-food" value="wet-food">Wet Food</label>
         <br>
-        <input type="checkbox" id="american" value="american"><label id="american-label" for="american">American</label>
+        <label id="dry-food-label" for="dry-food"><input type="checkbox" id="dry-food" value="dry-food">Dry Food</label>
         <br>
-        <label id="feedback-label" for="feedback">Feedback:</label>
+        <label id="feedback-label" for="feedback">Additional Information:</label>
         <br>
         <textarea id="feedback"></textarea>
+        
     </fieldset>
     <button type="submit" id="submit">Submit</button>
 </form>

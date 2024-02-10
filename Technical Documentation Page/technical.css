@@ -1,0 +1,32 @@
+body{
+    background-color: bisque;
+    color:black;
+}
+/* for devices above 768px */
+@media screen and (min-width: 768px) {
+        
+    #navbar{
+        float:left;
+        position: fixed;
+        overflow: auto;
+        visibility: visible;
+        background-color: grey;
+        width: 15%;
+        height: 100%;
+        
+    }
+
+    #navbar.ul{
+        display: block;
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-doc{
+        float:right;
+        width:83%;
+        margin: 0%;
+        
+    }
+}
