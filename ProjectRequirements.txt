@@ -1,0 +1,7 @@
+Create a web page that users can interact with.
+- Needs to have the ability to upload videos and view them
+- Needs forum style interface
+- Needs to be dynamic for the device user is viewing on 
+
+Frontend Web interface (HTML,CSS,Angular JS)
+Backend Python, SQL lite DB
