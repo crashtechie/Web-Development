@@ -1,0 +1,11 @@
+body{
+    background-color: bisque;
+}
+
+#header{
+    background-color: black;
+    color:green;
+    top:0%;
+    bottom: 50px;
+    font-weight: bold;
+}
