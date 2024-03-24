@@ -1,1 +1,5 @@
 .idea
+.privatedoc/*
+Backend/mariadb_repo_setup
+Backend/.gitplaceholder
+Frontend/.gitplaceholder
