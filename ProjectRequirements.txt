@@ -1,7 +1,8 @@
 Create a web page that users can interact with.
-- Needs to have the ability to upload videos and view them
-- Needs forum style interface
+- Needs to have the ability to add new data, view data, and edit exiting data
+- Needs user login and authentication
 - Needs to be dynamic for the device user is viewing on 
 
 Frontend Web interface (HTML,CSS,Angular JS)
-Backend Python, SQL lite DB
+Backend Python, mariadb
+    - prerequisits
