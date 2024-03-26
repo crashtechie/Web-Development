@@ -6,7 +6,7 @@ def print_customers(cust):
     cust.execute("SELECT * FROM customer_view")
     for (customer_id,first_name, last_name, email, phone_number, birth_date, date_entered, notes) in cust:
         customer.append(f"{customer_id} | {first_name} | {last_name} | <{email}> | <{phone_number}> | {birth_date} | {date_entered} | {notes}")
-    print("\n".join(contacts))
+    print("\n".join(customer))
 
 try: 
     conn = mariadb.connect(
