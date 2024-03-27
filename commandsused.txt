@@ -1,0 +1,9 @@
+- Created on WSL Ubuntu 22.04
+- MariaDB running on docker container 
+sudo apt update -y && sudo apt upgrade -y
+Docker Install https://docs.docker.com/engine/install/ubuntu/?ref=crapts.org
+sudo apt install python3-venv
+sudo apt install docker
+python3 -m env .venv
+pip install -r Backend/requirments.txt
+python3 manage.py startapp api
