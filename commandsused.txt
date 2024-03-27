@@ -3,7 +3,37 @@
 sudo apt update -y && sudo apt upgrade -y
 Docker Install https://docs.docker.com/engine/install/ubuntu/?ref=crapts.org
 sudo apt install python3-venv
-sudo apt install docker
+sudo apt-get install python3-dev default-libmysqlclient-dev build-essential pkg-config
+sudo apt install mysql-client
 python3 -m env .venv
 pip install -r Backend/requirments.txt
 python3 manage.py startapp api
+python3 -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+python3 manage.py makemigrations
+
+python3 -m venv env
+source env/bin/activate
+install all requirements
+
+
+django-admin startproject backend
+cd backend
+python manage.py startapp api
+
+---
+add api and rest_framework to installed apps
+
+create models.py, urls and serializers.py
+cd ..
+
+---
+npm create vite@latest frontend -- --template react
+npm install axios
+npm install react-router-dom
+npm install jwt-decode
+
+
+
+add:
+"proxy": "http://localhost:8000",
+to package.json
