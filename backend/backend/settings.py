@@ -100,11 +100,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DB_ENGINE'),
-        'OPTIONS': {
-            'read_default_file': os.getenv('DB_CONFIG'),
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'users_local_db.sqlite3',
     }
 }
 

@@ -3,4 +3,5 @@
 .env/
 .config/
 backup/
-.sqlite3
+*.sqlite3
+my.cnf
