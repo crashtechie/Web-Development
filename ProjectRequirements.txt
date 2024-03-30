@@ -3,6 +3,11 @@ Create a web page that users can interact with.
 - Needs user login and authentication
 - Needs to be dynamic for the device user is viewing on 
 
-Frontend Web interface (HTML,CSS,Angular JS)
+Frontend Web interface (HTML,CSS,react js)
 Backend Python, mariadb
     - prerequisits
+        - mariadb
+        - docker
+        - django
+        - django-rest-framework
+        - django-cors-headers
