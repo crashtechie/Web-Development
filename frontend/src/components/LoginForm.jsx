@@ -11,7 +11,7 @@ function Form({route,method}) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
-    const name = method === 'login' ? 'Login' : 'Register';
+    const name = method == 'login' ? 'Login' : 'Register';
 
     const handleSubmit = async (e) => {
         setLoading(true);
@@ -19,7 +19,7 @@ function Form({route,method}) {
         
         try {
             const response = await api.post(route, { username, password });
-            if (method === 'login') {
+            if (method == 'login') {
                 localStorage.setItem(ACCESS_TOKEN, response.data.access);
                 localStorage.setItem(REFRESH_TOKEN, response.data.refresh);
                 navigate('/');
@@ -34,7 +34,7 @@ function Form({route,method}) {
     };
 
     return <form onSubmit={handleSubmit} className='login-container nes-container with-title'>
-        <h1 class="title">{name}</h1>
+        <h1 className="title">{name}</h1>
         <input
             className='login-input nes-input'
             type='text'

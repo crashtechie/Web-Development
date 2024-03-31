@@ -11,7 +11,6 @@ class CreateUserView(generics.CreateAPIView):
     permission_classes = [AllowAny]
     
 class NoteListCreate(generics.ListCreateAPIView):
-    queryset = Note.objects.all()
     serializer_class = NoteSerializer
     permission_classes = [IsAuthenticated]
             
